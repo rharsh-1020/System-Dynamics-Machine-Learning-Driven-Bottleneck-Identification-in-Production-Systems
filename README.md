@@ -36,7 +36,7 @@ Key dependencies:
 numpy · pandas · matplotlib · scikit-learn · pyyaml · simpy · xgboost · tensorflow / keras
 
 ## **Data Source**
-Dataset: SECOM Data Set — UCI Machine Learning Repository
+Dataset: [SECOM Data Set — UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/179/secom)
 Place files in:
 ```bash
 data/
@@ -46,22 +46,20 @@ data/
 - First column = {−1,+1} → map to {0, 1} for binary classification.
 - Positive rate ≈ 6.6 %.
 
-Do not commit raw data if restricted by license.
-
 ## How to Run
 1. Train the ML Baseline
 ```bash
 python models/01_secom_baseline.py
 ```
-Generates ROC/PR curves, confusion matrix, and feature importances.
+   Generates ROC/PR curves, confusion matrix, and feature importances.
 
-3. Run Simulations
+2. Run Simulations
 ```bash
 python sim/line_sim_schedule.py --tag baseline
 python sim/line_sim_schedule.py --tag risk --events sim/risk_schedule.csv
 python sim/line_sim_schedule.py --tag mitigate --events sim/mitigation_schedule.csv
 ```
-Outputs JSON/CSV summaries and plots of throughput, queues, and utilization.
+   Outputs JSON/CSV summaries and plots of throughput, queues, and utilization.
 
 3.(Optional) Train GRU Model
 ```bash
