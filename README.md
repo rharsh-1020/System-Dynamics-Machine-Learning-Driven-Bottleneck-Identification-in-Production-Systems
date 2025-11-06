@@ -1,4 +1,4 @@
-# System-Dynamics-Machine-Learning-Driven-Bottleneck-Identification-in-Production-Systems
+# System Dynamics + Machine Learning–Driven Bottleneck Identification
 
 
 ---
@@ -9,7 +9,7 @@ This repository implements a **hybrid System Dynamics (SD)** and **Machine Learn
 It models how **bottlenecks shift dynamically** across stations and demonstrates how **data-driven mitigation** can improve throughput and reduce queue congestion.
 
 **Core idea:**  
-> Learn failure risk from real manufacturing data (SECOM), map it to capacity variations in a simulated line, and evaluate proactive mitigation strategies using System Dynamics and Discrete-Event Simulation (SimPy).
+Learn failure risk from real manufacturing data (SECOM), map it to capacity variations in a simulated line, and evaluate proactive mitigation strategies using System Dynamics and Discrete-Event Simulation (SimPy).
 
 ---
 
@@ -37,6 +37,7 @@ numpy · pandas · matplotlib · scikit-learn · pyyaml · simpy · xgboost · t
 
 ## **Data Source**
 Dataset: [SECOM Data Set — UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/179/secom)
+
 Place files in:
 ```bash
 data/
