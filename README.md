@@ -62,7 +62,7 @@ python sim/line_sim_schedule.py --tag mitigate --events sim/mitigation_schedule.
 ```
    Outputs JSON/CSV summaries and plots of throughput, queues, and utilization.
 
-3.(Optional) Train GRU Model
+3. (Optional) Train GRU Model
 ```bash
 python models/02_secom_gru.py
 ```
